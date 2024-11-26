@@ -1,0 +1,66 @@
+{
+  "name": "better-move",
+  "displayName": "Better Move",
+  "publisher": "bettermoveeeeee",
+  "description": "",
+  "version": "0.0.40",
+  "icon": "./skyr.png",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "better-move.MoveForward",
+      "title": "MoveForward"
+      },
+      {
+      "command": "better-move.MoveBackward",
+      "title": "MoveBackward"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "better-move.MoveForward",
+        "key": "ctrl+alt+shift+right",
+        "mac": "cmd+alt+shift+right",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "better-move.MoveBackward",
+        "key": "ctrl+alt+shift+left",
+        "mac": "cmd+alt+shift+left",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "analysis scope of bettermove extension",
+      "properties": {
+          "bettermove.analysis-scope": {
+              "type": "integer",
+              "default": 10,
+              "description": "bettermove analysis scope --> lines above and below cursor to analyze"
+          }
+      }
+  }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.83.0",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "18.x",
+    "eslint": "^8.50.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
