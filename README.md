@@ -1,33 +1,47 @@
-# better-move README
+# Better Move Extension
 
-This extension remaps Ctrl + Shift + Alt + ArrowLeft/ArrowRight to moving an argument (inside brackets, braces or parentheses) which the cursor is placed on, either one forward or backwards, effectively switching two arguments each time the combination is pressed (or MoveLeft/MoveRight is triggered from the Control Panel (Ctrl + Shift + P))
+The Better Move extension enhances your coding experience by allowing you to seamlessly rearrange function arguments in your code. By remapping key combinations, it enables efficient argument shuffling within code blocks. This extension is particularly useful for developers working with Python, C, and JavaScript files.
 
-The cursor follows the argument, so by repeatedly pressing rightArrow/leftArrow the argument can be moved multiple times forward or backwards
+## Features
 
-It was tested mainly for python, c and JavaScript files, is written with JavaScript and my first Javascript project.
+- Remap Key Combinations: Control the movement of function arguments with ease using `Ctrl + Shift + Alt + ArrowLeft/ArrowRight`.
+- Argument Swapping: Move an argument, within parentheses, brackets, or braces, forward or backward in the argument list, effectively swapping it with adjacent arguments.
+- Cursor Tracking: The cursor accompanies the moving argument, allowing for quick successive moves.
+- Error Handling: Includes basic error handling for scenarios where the cursor is outside a function or when attempting to move an argument beyond function boundaries.
 
-It catches the corresponding errors if the cursor is placed outside of a function or an argument is attempted to be moved outside of the function.
+## Usage
 
-Please report any bugs, I am happy to fix them asap.
+Key combinations:
+- `Ctrl + Shift + Alt + ArrowLeft` - Moves the selected argument to the left.
+- `Ctrl + Shift + Alt + ArrowRight` - Moves the selected argument to the right.
 
-## ONLY WORKING ON WINDOWS SO FAR, UPDATE SOON
+The cursor will stay with the argument, allowing for continuous adjustment.
 
-Ctrl + Shift + Alt + ArrowLeft   ====>  Move argument to the front
-Ctrl + Shift + Alt + ArrowRight  ====>  Move argument to the back
+## Compatibility
 
-Mac:
+- The extension has been primarily tested on Windows.
+- Note: Currently available only for Windows. Updates for other platforms are in development.
 
-Cmd + Shift + Alt + ArrowLeft   ====>  Move argument to the front
-Cmd + Shift + Alt + ArrowRight  ====>  Move argument to the back
+## Installation & Requirements
 
-The cursor moves together with the argument
+- Platform: Only Windows at the moment.
+- Requirements: No specific requirements are known. Please report any unforeseen issues.
 
-## Requirements
+## Configuration
 
-I do not think there are any, please let me know if so.
+- Keybindings: You can customize the `MoveLeft` and `MoveRight` commands through the extension settings.
+- Code Analysis Depth: Set the depth for code analysis to define how many lines above and below the cursor are considered (Default is 10 lines).
 
-## Extension Settings
+## Feedback and Support
 
-MoveLeft and MoveRight can be reconfigured to other keybindings from the settings
+This is my first JavaScript project, and I welcome any feedback. Please report bugs or share your suggestions, and I will address them promptly.
 
-The depth this extension analyzes the code up to (lines above and below the cursor) can also be set in the setting (Default: 10)
+For more details, visit the Better Move GitHub repository. (https://github.com/AntonKettner/BetterMove)
+
+Thank you for trying out Better Move! I look forward to your feedback to improve this extension.
+
+</details>
+
+## License
+
+[Apache 2.0 © 2024 Anton Kettner.](./LICENSE)
