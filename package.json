@@ -3,7 +3,7 @@
   "displayName": "Better Move",
   "publisher": "bettermoveeeeee",
   "description": "",
-  "version": "0.0.52",
+  "version": "0.0.53",
   "icon": "./skyr.png",
   "engines": {
     "vscode": "^1.83.0"
