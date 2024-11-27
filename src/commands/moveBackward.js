@@ -1,6 +1,6 @@
 const vscode = require('vscode');
-const {countUnclosedOpeners, countUnopenedClosers} = require('../utils/symbolCounter');
-const {getTrimmedParts} = require('../utils/stringUtils');
+const { countUnclosedOpeners, countUnopenedClosers } = require('../utils/symbolCounter');
+const { getTrimmedParts } = require('../utils/stringUtils');
 
 /**
  * @typedef {number[]} IndexArray

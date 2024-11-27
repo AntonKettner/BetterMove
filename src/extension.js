@@ -1,6 +1,6 @@
 const vscode = require('vscode');
-const {registerMoveForward} = require('./commands/moveForward');
-const {registerMoveBackward} = require('./commands/moveBackward');
+const { registerMoveForward } = require('./commands/moveForward');
+const { registerMoveBackward } = require('./commands/moveBackward');
 
 function activate(context) {
     // Register commands
