@@ -19,12 +19,11 @@ The cursor will stay with the argument, allowing for continuous adjustment.
 
 ## Compatibility
 
-- The extension has been primarily tested on Windows.
-- Note: Currently available only for Windows. Updates for other platforms are in development.
+- The extension has been tested on Windows 10 and Kubuntu
 
 ## Installation & Requirements
 
-- Platform: Only Windows at the moment.
+- Platform: Windows, Linux
 - Requirements: No specific requirements are known. Please report any unforeseen issues.
 
 ## Configuration
